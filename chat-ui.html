@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Chat UI</title>
+
+    <style>
+        body {
+            background-color: #e5e5e5;
+            font-family: Arial;
+        }
+
+        .chat-box {
+            width: 300px;
+            background-color: white;
+            margin: 50px auto;
+            border: 1px solid gray;
+        }
+
+        /* HEADER */
+        .chat-header {
+            background-color: #1877f2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* MESSAGES */
+        .messages {
+            padding: 10px;
+        }
+
+        .left {
+            background-color: #f1f1f1;
+            padding: 8px;
+            margin: 5px 0;
+            width: 70%;
+            border-radius: 10px;
+        }
+
+        .right {
+            background-color: #1877f2;
+            color: white;
+            padding: 8px;
+            margin: 5px 0;
+            width: 70%;
+            margin-left: auto;
+            border-radius: 10px;
+            text-align: right;
+        }
+
+        /* INPUT */
+        .input-box {
+            padding: 10px;
+            border-top: 1px solid gray;
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="chat-box">
+
+    <div class="chat-header">
+        Chat with Alex
+    </div>
+
+    <div class="messages">
+        <div class="left">Hi</div>
+        <div class="right">Hello!</div>
+        <div class="left">How are you?</div>
+        <div class="right">I’m good </div>
+    </div>
+
+    <div class="input-box">
+        <input type="text" placeholder="Type a message">
+    </div>
+
+</div>
+
+</body>
+</html>
