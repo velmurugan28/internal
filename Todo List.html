@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/Vijisakthi/Desktop/javascript/todo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 70%;
+            padding: 6px;
+        }
+
+        button {
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        li {
+            background: #eaeaea;
+            padding: 8px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        li button {
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <input id="input" placeholder="Enter item">
+    <button onclick="add()">Add</button>
+
+    <ul id="list_container">
+        
+    </ul>
+</div>
+
+<script>
+    var ul = document.getElementById("list_container")
+    var input = document.getElementById("input")
+
+    function add() {
+        if (input.value === "") return;
+
+        var listItem = document.createElement("li")
+        listItem.innerHTML = input.value + 
+        '<button onclick="deleteItem(event)">Delete</button>'
+
+        ul.append(listItem)
+        input.value = ""
+    }
+
+    function deleteItem(event) {
+        event.target.parentElement.remove()
+    }
+</script>
+
+
+
+</body></html>
