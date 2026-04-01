@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBot - Your AI Study Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar-container">
+                <img src="bot_avatar.png" alt="Bot Avatar" id="botAvatar">
+            </div>
+            <div class="header-text">
+                <h1>EduBot</h1>
+                <p>Always online to help you</p>
+            </div>
+        </header>
+
+        <div id="chatbox">
+            <!-- Messages will appear here -->
+            <div class="bot">Hello! I'm EduBot. How can I assist you with your studies today?</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your question here..." autocomplete="off">
+            <button onclick="sendMessage()" id="sendBtn">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
